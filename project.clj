@@ -37,6 +37,7 @@
                                    ;; in the default browser once Figwheel has
                                    ;; started and complied your application.
                                    ;; Comment this out once it no longer serves you.
+                                   :websocket-host :js-client-host
                                    :open-urls ["http://localhost:3449/cards.html"]}
                         :compiler { :main       "omnom.core"
                                     :asset-path "js/compiled/devcards_out"
