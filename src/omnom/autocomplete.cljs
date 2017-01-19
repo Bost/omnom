@@ -101,6 +101,7 @@
   (render
    [this]
    (let [props (om/props this)]
+     ;; see http://stackoverflow.com/q/37212917
      (dom/div nil
               (auto-completer-id1 (merge props {:id-prop "id1"}))
               (auto-completer-id2 (merge props {:id-prop "id2"}))))))
