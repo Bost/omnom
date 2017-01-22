@@ -38,7 +38,8 @@
                                    ;; started and complied your application.
                                    ;; Comment this out once it no longer serves you.
                                    :websocket-host :js-client-host
-                                   :open-urls ["http://localhost:3449/cards.html"]}
+                                   ;; :open-urls ["http://localhost:3448/cards.html"]
+                                   }
                         :compiler { :main       "omnom.core"
                                     :asset-path "js/compiled/devcards_out"
                                     :output-to  "resources/public/js/compiled/omnom_devcards.js"
@@ -59,7 +60,8 @@
                                    :output-to  "resources/public/js/compiled/omnom.js"
                                    :optimizations :advanced}}]}
 
-  :figwheel { :css-dirs ["resources/public/css"] }
+  :figwheel {:css-dirs ["resources/public/css"]
+             :server-port 3448}
 
   :profiles {:dev {:dependencies [[binaryage/devtools "0.8.3"]
                                   [figwheel-sidecar "0.5.8"]
