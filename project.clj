@@ -13,8 +13,8 @@
 
                  ;; need to specify this for sablono
                  ;; when not using devcards
-                 [cljsjs/react "15.4.0-0"]
-                 [cljsjs/react-dom "15.4.0-0"]
+                 [cljsjs/react "15.4.2-0"]
+                 [cljsjs/react-dom "15.4.2-0"]
                  [org.omcljs/om "1.0.0-alpha48-SNAPSHOT"
                   ;; :exclusions [commons-codec]
                   ]
